@@ -1,0 +1,79 @@
+# Doctor Plugin Configuration
+doctor:
+  xp-per-heal: 10
+  max-level: 5
+  heal-cooldown-seconds: 30
+  diagnose-cooldown-seconds: 10
+  team-heal-cooldown-buff: 0.8
+  team-xp-pool-share: 0.5
+  team-xp-buff-multiplier: 0.0002
+injury:
+  chance-per-damage: 0.1
+  tick-rate-seconds: 1
+  broken-leg-duration-seconds: 60
+  infection-duration-seconds: 120
+  infection-damage-interval: 20
+  bleeding-duration-seconds: 90
+  bleeding-damage: 1.0
+emergency:
+  interval-minutes: 30
+  plague-chance: 0.33
+  bleeding-chance: 0.33
+  fracture-chance: 0.34
+items:
+  stethoscope:
+    material: "IRON_INGOT"
+    display-name: "§fStethoscope"
+    lore: "§7Diagnose players' health"
+    recipe:
+      - "  I"
+      - " I "
+      - "G  "
+    ingredients:
+      I: "IRON_INGOT"
+      G: "GLASS_PANE"
+  bandage:
+    material: "PAPER"
+    display-name: "§fBandage"
+    lore: "§7Heals HP (no injuries)"
+    recipe:
+      - "PPP"
+      - "WWW"
+      - "   "
+    ingredients:
+      P: "PAPER"
+      W: "WHITE_WOOL"
+  antidote:
+    material: "POTION"
+    display-name: "§fAntidote"
+    lore: "§7Cures Infection"
+    recipe:
+      - "  M"
+      - " G "
+      - " B "
+    ingredients:
+      M: "MILK_BUCKET"
+      G: "GLASS_BOTTLE"
+      B: "BLAZE_POWDER"
+  suture-kit:
+    material: "STRING"
+    display-name: "§fSuture Kit"
+    lore: "§7Stops Bleeding"
+    recipe:
+      - " S "
+      - "SNS"
+      - " I "
+    ingredients:
+      S: "STRING"
+      N: "NETHER_WART"
+      I: "IRON_INGOT"
+  splint:
+    material: "STICK"
+    display-name: "§fSplint"
+    lore: "§7Fixes Broken Leg"
+    recipe:
+      - "S  "
+      - "S  "
+      - "S  "
+    ingredients:
+      S: "STICK"

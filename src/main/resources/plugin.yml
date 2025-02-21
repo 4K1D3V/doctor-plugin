@@ -1,0 +1,15 @@
+name: Doctor
+version: 1.0
+main: pro.akii.ks.DoctorPlugin
+api-version: 1.20
+author: ["Kit"]
+website: https://ks.akii.pro
+description: A medical-themed plugin with roles, injuries, teams, and emergencies.
+commands:
+  doctor:
+    description: Manage Doctor roles, teams, and abilities
+    usage: /<command> [register|diagnose|heal|stats|kit|team|leaderboard] [args]
+permissions:
+  doctor.use:
+    description: Allows use of Doctor plugin features
+    default: op
